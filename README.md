@@ -1,4 +1,10 @@
 ## blog 项目
+### 项目技术栈
+React
+### code地址
+https://github.com/code-YuJun/YuJun-WEBSITE
+### 项目中使用的 icon 
+https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=2774920
 
 ### craco 文件别名
 在 craco 中的配置相当于 vue 项目中修改 vue.config.js 文件

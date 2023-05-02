@@ -9,6 +9,7 @@ import 'normalize.css'
 import App from '@/App';
 import reportWebVitals from './reportWebVitals';
 import theme from "@/assets/theme"
+import '@/assets/icon/iconfont.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

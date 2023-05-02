@@ -1,0 +1,30 @@
+{
+  "id": "2774920",
+  "name": "YUJUN",
+  "font_family": "iconfont",
+  "css_prefix_text": "yujun-",
+  "description": "YUJUN组件库所需icon",
+  "glyphs": [
+    {
+      "icon_id": "673799",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e6cb",
+      "unicode_decimal": 59083
+    },
+    {
+      "icon_id": "34893668",
+      "name": "下-面",
+      "font_class": "xia-mian",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "15838424",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    }
+  ]
+}
