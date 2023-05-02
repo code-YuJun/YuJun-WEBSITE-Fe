@@ -1,5 +1,9 @@
 import React, { memo } from "react";
+import BlogContainer from "@/components/blog-container";
 
-const index = memo(() => (<div>index</div>))
+const index = memo(() => (
+    <div>
+        <BlogContainer />
+    </div>))
 
 export default index

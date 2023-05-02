@@ -159,10 +159,10 @@ export const RightWrapper  = styled.div`
 定义样式：
 ```javascript
     mixin:{
-        boxShadow:`
-            transition:box-shadow 200ms ease;
+        boxBgc:`
+            transition:background 200ms ease;
             &:hover{
-                box-shadow:0 2px 4px rgba(0,0,0,.18)
+                background:rgb(0,0,0,.1)
             }
         `
     },
@@ -170,7 +170,15 @@ export const RightWrapper  = styled.div`
 使用：
 ```css
     .nav-menu-item{
-        padding:0 15px;
-        ${props => props.theme.mixin.boxShadow}
+        ${props => props.theme.mixin.boxBgc}
+    }
+```
+## 首页banner图样式
+```css
+    .img{
+        background:url(${banner}) no-repeat;
+        width:100%;
+        height:100vh;
+        background-size:cover;
     }
 ```
