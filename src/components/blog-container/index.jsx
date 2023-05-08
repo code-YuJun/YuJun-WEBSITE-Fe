@@ -1,5 +1,8 @@
 import React, { memo } from "react";
 import { BlogContainerWrapper } from "./style"
+const handleClick = () => {
+    window.scrollTo(0, window.innerHeight);
+}
 const BlogFooter = memo(() => {
     return (
         <BlogContainerWrapper>
@@ -8,15 +11,14 @@ const BlogFooter = memo(() => {
                 <div className="title">
                     我的个人小站
                 </div>
-                <div className="btn">
+                <div className="btn" onClick={handleClick}>
                     开始阅读
                 </div>
                 <div className="link">
-                    <div>111</div>
                     <div>222</div>
                     <div>333</div>
                     <div>444</div>
-                </div>
+                </div> 
             </div>
         </BlogContainerWrapper>
     )
