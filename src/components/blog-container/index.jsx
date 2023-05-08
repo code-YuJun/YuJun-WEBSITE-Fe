@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import { BlogContainerWrapper } from "./style"
+import BlogItem from "@/components/blog-container/index.jsx"
 const handleClick = () => {
     window.scrollTo(0, window.innerHeight);
 }
