@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "@/assets/img/banner.jpg"
+import quyueqiu from "@/assets/img/quyueqiu.jpg"
 
 export const BlogContainerWrapper = styled.div`
     -webkit-user-select: none; /* Safari */
@@ -7,7 +7,7 @@ export const BlogContainerWrapper = styled.div`
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none;
     .img{
-        background:url(${banner}) no-repeat;
+        background:url(${quyueqiu}) no-repeat;
         width:100%;
         margin-top:-64px;
         height:100vh;
