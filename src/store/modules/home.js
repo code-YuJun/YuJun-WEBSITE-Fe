@@ -1,7 +1,8 @@
 import { createSlice,createAsyncThunk } from "@reduxjs/toolkit"
-import {} from "@/api"
-export const fetchHomeDataAction = createAsyncThunk("fetchdata",() => {
-
+import { getHomeArticles } from "@/api/api"
+export const fetchHomeDataAction = createAsyncThunk("fetchdata",async () => {
+    const res = await getHomeArticles()
+    return res
 })
 
 const homeSlice = createSlice({
@@ -11,6 +12,11 @@ const homeSlice = createSlice({
     },
     reducers: {
         getArticles(state,{payload}){
+            state.articles = payload
+        }
+    },
+    extraReducers:{
+        [fetchHomeDataAction.fulfilled](state,{payload}){
             state.articles = payload
         }
     }

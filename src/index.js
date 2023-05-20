@@ -13,7 +13,7 @@ import '@/assets/icon/iconfont.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <Suspense fallback="loading">
       <Provider store={store}>
         <ThemeProvider theme={theme}>
@@ -23,7 +23,7 @@ root.render(
         </ThemeProvider>
       </Provider>
     </Suspense>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 
