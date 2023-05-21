@@ -4,5 +4,8 @@ module.exports = {
         alias:{
             "@":path.resolve(__dirname,"src")
         }
+    },
+    devServer: {
+        port: 8080 // 指定端口号
     }
 }

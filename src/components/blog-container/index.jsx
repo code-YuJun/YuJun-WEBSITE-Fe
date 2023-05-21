@@ -2,20 +2,21 @@ import React, { memo, useEffect } from "react";
 import { shallowEqual, useDispatch, useSelector } from "react-redux"
 import { BlogContainerWrapper } from "./style"
 import { fetchHomeDataAction } from "@/store/modules/home.js"
-import BlogItem from "@/components/blog-container/index.jsx"
+import BlogItem from "@/components/blog-item/index.jsx"
 const handleClick = () => {
     window.scrollTo(0, window.innerHeight);
 }
 const BlogContainer = memo(() => {
     // 从redux中获取数据
     const { articleInfo } = useSelector((state) => ({
-        articleInfo:state.home.articles
-    }),shallowEqual)
+        articleInfo: state.home.articles
+    }), shallowEqual)
     const dispatch = useDispatch()
     useEffect(() => {
+        console.log("数据调用")
         dispatch(fetchHomeDataAction())
     }, [dispatch])
-    return (
+    return ( 
         <BlogContainerWrapper>
             <div className="img"></div>
             <div className="content">
@@ -32,9 +33,9 @@ const BlogContainer = memo(() => {
                 </div>
             </div>
             <div className="articleBox">
-            {articleInfo.map((item) => {
-                return <BlogItem />
-            })}
+                 {articleInfo.map(item => {
+                    return <BlogItem ItemData={item} key={item.id}></BlogItem>
+                })} 
             </div>
         </BlogContainerWrapper>
     )

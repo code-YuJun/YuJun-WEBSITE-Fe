@@ -23,7 +23,7 @@ root.render(
         </ThemeProvider>
       </Provider>
     </Suspense>
-  // </React.StrictMode>
+  //  </React.StrictMode>
 );
 
 

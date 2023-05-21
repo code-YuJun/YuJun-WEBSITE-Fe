@@ -45,4 +45,9 @@ export const BlogContainerWrapper = styled.div`
         justify-content: space-around;
         padding: 0 25px;
     }
+    .articleBox{
+        width:1125px;
+        margin:0 auto;
+        display:flex;
+    }
 ` 
